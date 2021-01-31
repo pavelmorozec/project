@@ -20,9 +20,13 @@ const personalMovieDB ={
             console.log("Error data not avaliable");
             i--;
         }
-
-
-        
-
       }
+
+      let message = (personalMovieDB.count <= 10 ) ? 'Просмотрено довольно мало фильмов':
+        (personalMovieDB.count >10 && personalMovieDB.count <= 30) ? 'Вы класический зритель':
+        (personalMovieDB.count > 30) ? 'Вы киноман':
+        'произошла ошибка';
+
+        alert(message);
+
       console.log(personalMovieDB);
