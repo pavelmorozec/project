@@ -1,19 +1,18 @@
 "use strict";
 
-function showFirstMessahe(){
-    console.log("I will buy new house, soon");
-}
+const buildings = {
+   wood : false,
+   brik : 100,
+   sayHello : function() {
+       console.log("Hello");
+   }
 
-///showFirstMessahe();
+};
 
-//let calc =(a,b)=>a+b;
+const house = {
+    wood: true
+};
 
-//console.log(calc(5,5));
+house.__proto__ = buildings;
 
-
-const str="I will buy new house soon";
-
-console.log(str.substring(15));
-
-const num = "12.2px";
-console.log(parseFloat(num));
+console.log(house.brik);

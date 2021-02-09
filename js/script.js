@@ -37,7 +37,7 @@ function rememberMyFilms() {
   }
 }
 
-//rememberMyFilms();
+
 
 function detectedPersonalLevel() {
   let message = (personalMovieDB.count <= 10) ? 'Просмотрено довольно мало фильмов' :
@@ -48,8 +48,8 @@ function detectedPersonalLevel() {
   alert(message);
 }
 
-//rememberMyFilms();
-//detectedPersonalLevel();
+rememberMyFilms();
+detectedPersonalLevel();
 writeYourGenres();
 showMyDB();
 
