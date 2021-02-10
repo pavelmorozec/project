@@ -9,10 +9,9 @@ const buildings = {
 
 };
 
-const house = {
-    wood: true
-};
+const house = Object.create(buildings);
 
-house.__proto__ = buildings;
 
+
+house.sayHello();
 console.log(house.brik);
